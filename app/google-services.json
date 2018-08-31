@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "918957885248",
+    "firebase_url": "https://fir-training-a2e81.firebaseio.com",
+    "project_id": "fir-training-a2e81",
+    "storage_bucket": "fir-training-a2e81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918957885248:android:2468f7bac82b8ea8",
+        "android_client_info": {
+          "package_name": "project.sabil.realtime_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918957885248-579256othk8rurcvunigso1ildop1m6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARpUWD8qbJLxqIbGSD9Cqlii9mlWQ8ydE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918957885248:android:af33300112a4be6b",
+        "android_client_info": {
+          "package_name": "project.sabil.realtimechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918957885248-579256othk8rurcvunigso1ildop1m6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARpUWD8qbJLxqIbGSD9Cqlii9mlWQ8ydE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
