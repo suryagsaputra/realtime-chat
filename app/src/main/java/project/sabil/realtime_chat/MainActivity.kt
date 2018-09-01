@@ -60,11 +60,12 @@ class MainActivity : AppCompatActivity() {
             .setValue(
                 Message(
                     token.toString(),
-                    "Title Test",
+                    name.text.toString(),
                     Calendar.getInstance().time.toString(),
                     message_value.text.toString()
                 )
             )
+        message_value.text.clear()
     }
 
     private fun resetMessageDatabase() {
