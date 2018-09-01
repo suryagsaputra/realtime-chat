@@ -2,11 +2,13 @@ package project.sabil.realtime_chat
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.google.firebase.iid.FirebaseInstanceId
 
 class MessageAdapter(context: Context, private val listMessage: MutableList<Message?>) : BaseAdapter() {
 
@@ -19,7 +21,17 @@ class MessageAdapter(context: Context, private val listMessage: MutableList<Mess
         val token = rowView.findViewById(R.id.token) as TextView
         val message = rowView.findViewById(R.id.message) as TextView
 
-        token.text = listMessage[position]?.token?.substring(0, 10)
+        if (FirebaseInstanceId.getInstance().token != listMessage[position]?.token) {
+            token.gravity = Gravity.RIGHT
+            message.gravity = Gravity.RIGHT
+        }
+
+        token.text =
+            if(listMessage[position]?.title == "")
+                listMessage[position]?.token?.substring(0, 10)
+            else
+                listMessage[position]?.title
+
         message.text = listMessage[position]?.message
 
         return rowView
